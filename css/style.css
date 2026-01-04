@@ -1,0 +1,170 @@
+/* ========================== VARIABLES ========================== */
+:root {
+    --font-base: "Poppins", sans-serif;
+    --color-dark: #000000;
+    --color-body: #ffffff;
+    --color-brand: #CF4D1C;
+    --color-brand-light: #E87700;
+    --color-brand-gradient-rgb: 242, 145, 1, 1;
+    --color-brand-rgb: 207, 77, 28;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --transition: all 0.5s ease;
+}
+
+/* ========================== RESET & BASE ========================== */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--color-body);
+    background-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-brand);
+}
+
+a:hover {
+    color: var(--color-brand-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.bg-brand {
+    background-color: var(--color-brand);
+    color: white;
+}
+
+/* ========================== UTILITIES ========================== */
+.section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.section-title h6 {
+    color: var(--color-brand);
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* ========================== BUTTONS ========================== */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--color-brand-light);
+    border-color: var(--color-brand-light);
+    color: black;
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--color-brand);
+    border: 2px solid var(--color-brand);
+    transition: var(--transition);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--color-brand);
+    color: white;
+}
+
+/* ========================== NAVBAR ========================== */
+.navbar {
+    box-shadow: var(--box-shadow);
+    background-color: #000000;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #000;
+    margin-left: 15px;
+    position: relative;
+    transition: var(--transition);
+}
+
+/* Hover + active */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-brand-light);
+}
+
+/* Dropdown menu style */
+.dropdown-menu {
+    background-color: #111;
+    border: none;
+    padding: 10px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: var(--transition);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--color-brand-light);
+    color: #ffffff;
+}
+
+/* Hover open dropdown on desktop */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        animation: fadeDown 0.3s ease-in-out;
+    }
+}
+
+/* Animation for dropdown */
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
