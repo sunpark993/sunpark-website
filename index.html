@@ -86,8 +86,14 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
-        <div class="container">
+    <section class="min-vh-100 d-flex align-items-center text-center position-relative">
+        <!-- Background Image -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-image: url('assets/images/home-hero.png'); background-size: cover; background-position: center;">
+        </div>
+        <!-- Dark Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+        <div class="container position-relative">
             <div class="row">
                 <div class="col-12">
                     <h1 class="fw-semibold text-white display-4">
@@ -96,14 +102,13 @@
                     <h5 class="text-white mt-3 mb-4">
                         Exporting Minerals, Food Products & Building Materials Since 1995
                     </h5>
-                    <div>
-                        <a href="about-us.html" class="btn btn-brand me-2">Get Started</a>
-                        <a href="enquiry.html" class="btn btn-outline-light ms-2">Enquiry Now</a>
-                    </div>
+                    <a href="about-us.html" class="btn btn-brand me-2">Get Started</a>
+                    <a href="enquiry.html" class="btn btn-outline-light ms-2">Enquiry Now</a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- ABOUT US (HOME VERSION) -->
     <section class="py-5 bg-dark">

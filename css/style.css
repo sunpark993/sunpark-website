@@ -248,15 +248,6 @@ footer .form-control:focus {
 }
 
 
-/* ------ HERO ------ */
-/* HERO */
-#hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/images/home-hero.png);
-    background-position: center;
-    background-size: cover;
-}
-
-
 /* CTA */
 .cta-section {
     background: #CF4D1C;
