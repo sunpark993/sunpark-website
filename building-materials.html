@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunpark - Home</title>
+    <title>Sun park - Home</title>
 
     <!-- Website Fevicon -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
@@ -62,10 +62,13 @@
                             Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                            <li><a class="dropdown-item" href="minerals.html">Minerals</a></li>
                             <li><a class="dropdown-item" href="fertilisers.html">Fertilisers</a></li>
-                            <li><a class="dropdown-item" href="food-spices.html">Food & Spices</a></li>
+                            <li><a class="dropdown-item" href="minerals.html">Minerals</a></li>
                             <li><a class="dropdown-item" href="building-materials.html">Building Materials</a></li>
+                            <li><a class="dropdown-item" href="spices.html">Spices</a></li>
+                            <li><a class="dropdown-item" href="fresh-fruits-and-vegetables.html">Fresh fruits &
+                                    vegetables</a></li>
+                            <li><a class="dropdown-item" href="dry-fruits-and-nuts.html">Dry fruits & nuts</a></li>
                         </ul>
                     </li>
 
@@ -85,57 +88,288 @@
         </div>
     </nav>
 
-    <!-- Building Materials Coming Soon (Bootstrap Only) -->
-    <section class="py-5 bg-white">
-        <div class="container py-5">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-7">
+    <!-- HERO SECTION - Building Materials -->
+    <section class="position-relative py-5">
+        <!-- Background Image -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: url('./assets/images/products/building-materials.png') center/cover no-repeat;">
+        </div>
 
-                    <!-- Icon -->
-                    <div class="mb-4">
-                        <span
-                            class="d-inline-flex align-items-center justify-content-center rounded-circle bg-warning bg-opacity-25"
-                            style="width: 90px; height: 90px;">
-                            <i class="bi bi-bricks text-brand" style="font-size: 40px;"></i>
-                        </span>
-                    </div>
+        <!-- Dark Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
 
-                    <h1 class="fw-bold text-dark mb-3">Building Materials Coming Soon</h1>
+        <!-- Content -->
+        <div class="container position-relative text-center text-white d-flex flex-column justify-content-center"
+            style="height: 70vh; padding-top: 80px;">
 
-                    <p class="text-muted mb-4">
-                        Our range of high-quality construction and building materials will be updated soon.
-                        Specifications, grades, and export details are on the way!
-                    </p>
+            <h1 class="display-4 fw-bold mb-3 text-light">
+                Durable Building Materials
+            </h1>
 
-                    <!-- Divider -->
-                    <div class="d-flex justify-content-center">
-                        <div class="border-bottom border-warning" style="width: 120px;"></div>
-                    </div>
+            <p class="lead mx-auto mb-4" style="max-width: 750px;">
+                Reliable and high-quality building materials suitable for modern construction projects,
+                ensuring strength, safety, and sustainability worldwide.
+            </p>
 
-                </div>
+            <div class="mt-3">
+                <a href="about.html" class="btn btn-outline-light btn-lg me-3 px-4">
+                    About Us
+                </a>
+
+                <a href="contact.html" class="btn btn-brand btn-lg px-4">
+                    Enquiry
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- CALL TO ACTION SECTION -->
+    <!-- ABOUT BUILDING MATERIALS SECTION -->
+    <section class="py-5 bg-secondary">
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-warning mb-3">About Our Building Materials</h2>
+                    <p class="mb-3">
+                        We supply premium-grade building materials sourced from trusted quarries,
+                        mills, and manufacturers. Our products meet global construction standards
+                        and are widely used in residential, commercial, and industrial projects
+                        across the world.
+                    </p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-check2-circle text-warning me-2"></i>
+                            High durability and long-lasting structural strength
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check2-circle text-warning me-2"></i>
+                            Multiple grades and finishes for every application
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check2-circle text-warning me-2"></i>
+                            Sourced from reliable and certified suppliers
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check2-circle text-warning me-2"></i>
+                            Export-ready with global quality compliance
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="./assets/images/products/building-materials.png" alt="Building Materials"
+                        class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OUR BUILDING MATERIALS SECTION -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+
+            <!-- Section Title -->
+            <h3 class="fw-bold mb-2 text-center text-brand">Our Building Materials</h3>
+            <p class="text-center text-light mb-4" style="max-width: 750px; margin: 0 auto;">
+                Explore our range of premium building materials sourced from trusted suppliers.
+                Each product is carefully selected to meet construction and industrial standards.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- Granite -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center card-move-up">
+                        <img src="./assets/images/products/building-materials/granite.png" class="card-img-top" alt="Granite">
+                        <div class="card-body bg-brand text-white">
+                            <h5 class="card-title fw-bold">Granite</h5>
+                            <p class="card-text small">Durable and elegant natural stone ideal for flooring,
+                                countertops, and construction.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Marble -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center card-move-up">
+                        <img src="./assets/images/products/building-materials/marble.png" class="card-img-top" alt="Marble">
+                        <div class="card-body bg-brand text-white">
+                            <h5 class="card-title fw-bold">Marble</h5>
+                            <p class="card-text small">Premium natural stone for aesthetic flooring, walls, and
+                                decorative surfaces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plywood -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center card-move-up">
+                        <img src="./assets/images/products/building-materials/plywood.png" class="card-img-top" alt="Plywood">
+                        <div class="card-body bg-brand text-white">
+                            <h5 class="card-title fw-bold">Plywood</h5>
+                            <p class="card-text small">Versatile engineered wood panel used in furniture, construction,
+                                and interior design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wood & Timber -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center card-move-up">
+                        <img src="./assets/images/products/building-materials/wood-timber.png" class="card-img-top"
+                            alt="Wood & Timber">
+                        <div class="card-body bg-brand text-white">
+                            <h5 class="card-title fw-bold">Wood & Timber</h5>
+                            <p class="card-text small">High-quality wood for construction, furniture, and structural
+                                applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ferrous & Non-Ferrous Metals -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center card-move-up">
+                        <img src="./assets/images/products/building-materials/metals.png" class="card-img-top"
+                            alt="Ferrous & Non-Ferrous Metals">
+                        <div class="card-body bg-brand text-white">
+                            <h5 class="card-title fw-bold">Ferrous & Non-Ferrous Metals</h5>
+                            <p class="card-text small">Essential metals for construction, industrial, and structural
+                                applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US - INFINITE SCROLL -->
+    <section class="py-5 bg-secondary">
+        <div class="container-fluid">
+            <h2 class="text-center text-white mb-4 fw-bold">Why Choose Us</h2>
+            <p class="text-center text-white mb-5">Top reasons customers love our premium quality products</p>
+
+            <!-- WRAPPER -->
+            <div class="overflow-hidden">
+                <div class="infinite-scroll">
+
+                    <!-- Original Set -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🥇</div>
+                        <h5 class="text-brand">Premium Quality</h5>
+                        <p class="text-dark" class="text-dark">Top-grade products sourced from trusted farms.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h5 class="text-brand">Fast Delivery</h5>
+                        <p class="text-dark">Quick and safe delivery to your doorstep.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🧪</div>
+                        <h5 class="text-brand">100% Fresh & Pure</h5>
+                        <p class="text-dark">No chemicals, no preservatives, only freshness.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h5 class="text-brand">Best Prices</h5>
+                        <p class="text-dark">Affordable pricing with premium standards.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⭐</div>
+                        <h5 class="text-brand">Customer Trusted</h5>
+                        <p class="text-dark">Thousands of happy returning customers.</p>
+                    </div>
+
+                    <!-- Duplicate Set for seamless infinite loop -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🥇</div>
+                        <h5 class="text-brand">Premium Quality</h5>
+                        <p class="text-dark">Top-grade products sourced from trusted farms.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h5 class="text-brand">Fast Delivery</h5>
+                        <p class="text-dark">Quick and safe delivery to your doorstep.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🧪</div>
+                        <h5 class="text-brand">100% Fresh & Pure</h5>
+                        <p class="text-dark">No chemicals, no preservatives, only freshness.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h5 class="text-brand">Best Prices</h5>
+                        <p class="text-dark">Affordable pricing with premium standards.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⭐</div>
+                        <h5 class="text-brand">Customer Trusted</h5>
+                        <p class="text-dark">Thousands of happy returning customers.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
     <section class="cta-section">
         <div class="container">
             <div class="row align-items-center">
+
                 <!-- Left Content -->
                 <div class="col-lg-8 text-lg-start text-center mb-3 mb-lg-0">
                     <h3 class="fw-bold text-white mb-2">
-                        Looking for a Reliable Import & Export Partner?
+                        Want to Source Premium Quality Products?
                     </h3>
                     <p class="text-white mb-0">
-                        Connect with Sunpark today for minerals, agricultural products, or building materials.
+                        Contact us for fresh fruits, vegetables, dry fruits, spices, or any wholesale bulk requirement.
                     </p>
                 </div>
+
                 <!-- Right Button -->
                 <div class="col-lg-4 text-lg-end text-center">
                     <a href="enquiry.html" class="btn btn-light btn-lg rounded-pill px-5 fw-semibold">
                         Enquiry Now
                     </a>
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2 class="fw-bold text-brand">Global Standards & Certifications</h2>
+                    <p class="text-muted">
+                        Sun park products meet the highest global standards for quality, safety, and sustainability.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+                <img src="assets/images/certificate/fssai.png" alt="FSSAI Certificate" class="img-fluid"
+                    style="max-height: 100px;">
+                <img src="assets/images/certificate/apeda.png" alt="APEDA Certificate" class="img-fluid"
+                    style="max-height: 100px;">
+                <img src="assets/images/certificate/cdb.png" alt="Coconut Development Board Certificate"
+                    class="img-fluid" style="max-height: 100px;">
+                <img src="assets/images/certificate/spices-board.png" alt="Spices Board Certificate" class="img-fluid"
+                    style="max-height: 100px;">
             </div>
         </div>
     </section>

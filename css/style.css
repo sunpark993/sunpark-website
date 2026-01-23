@@ -37,7 +37,12 @@ a:hover {
     color: var(--color-brand-light);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     color: var(--color-dark);
 }
@@ -244,7 +249,6 @@ footer .line {
 footer .form-control:focus {
     outline: none;
     box-shadow: none;
-    border-color: var(--color-brand-light);
 }
 
 
@@ -270,7 +274,6 @@ footer .form-control:focus {
 #contactFormSection .form-control:focus {
     box-shadow: none !important;
     outline: none !important;
-    border-color: var(--color-brand-light) !important;
     color: var(--color-dark) !important;
 }
 
@@ -303,3 +306,66 @@ footer .form-control:focus {
     border-color: var(--color-brand) !important;
 }
 
+
+/* Index Page */
+
+/* products section */
+.know-more-link {
+    display: inline-block;
+    color: #ffffff;
+    /* Highlight color */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.know-more-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* ========================== PRODUCTS PAGE ========================== */
+
+.infinite-scroll {
+    display: flex;
+    gap: 20px;
+    animation: scroll 6s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.feature-card {
+    min-width: 250px;
+    background: white;
+    border-radius: 12px;
+    padding: 8px 16px 8px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #28a745;
+}
+
+
+/* ============ Contact form error ============ */
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-input {
+    border-color: red !important;
+}
