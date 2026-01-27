@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "Exporting Worldwide Since 1995",
             "Fertilisers, Minerals, Building Materials",
             "Spices, Fresh Fruits, Vegetables",
-            "Dry Fruits & Nuts"
+            "Dry Fruits and Nuts"
         ],
         typeSpeed: 50,
         backSpeed: 30,

@@ -24,7 +24,7 @@ document.getElementById("enquiryForm").addEventListener("submit", function (e) {
         products.push(item.value);
     });
 
-    // ===== VALIDATION =====
+    // === VALIDATION ===
     if (company.length < 3) showError("err_company", "Company name must have at least 3 characters.");
     if (name.length < 3) showError("err_name", "Full name must have at least 3 characters.");
     if (!/^[0-9]+$/.test(phone)) showError("err_phone", "Phone number must contain only numbers.");
@@ -35,8 +35,49 @@ document.getElementById("enquiryForm").addEventListener("submit", function (e) {
 
     if (hasError) return;
 
-    // ===== FORM DATA =====
-    const formData = { company, name, phone, email, products: products.join(","), message };
+    // === FORM DATA ===
+    const formData = {
+        company,
+        name,
+        phone,
+        email,
+        products: products.join(", "),
+        message
+    };
 
     console.log("Form Data Submitted: ", formData);
+
+    // ======================================
+    // 🚀 Show Loader Overlay
+    // ======================================
+    document.getElementById("loadingOverlay").style.display = "flex";
+
+    // === SEND TO GOOGLE SHEET ===
+    fetch("https://script.google.com/macros/s/AKfycbyyrcOesUCU4Mef-nGrbZJKFMxoThfnVrJtFPut_VsRuK2bHjA3cSCVKGeF34g_ZoD7zw/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+    })
+    .then(() => {
+        // Hide Loader
+        document.getElementById("loadingOverlay").style.display = "none";
+
+        // Show Success Toast
+        const toast = new bootstrap.Toast(document.getElementById("successToast"));
+        toast.show();
+
+        // Reset Form
+        document.getElementById("enquiryForm").reset();
+    })
+    .catch(err => {
+        console.error("Error:", err);
+
+        // Hide Loader
+        document.getElementById("loadingOverlay").style.display = "none";
+
+        // Show Error Toast
+        const toast = new bootstrap.Toast(document.getElementById("errorToast"));
+        toast.show();
+    });
 });
