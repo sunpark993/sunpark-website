@@ -23,7 +23,7 @@ fetch('components/footer.html')
 
             // Validate each field
             const nameValid = name.length >= 3;
-            const mobileValid = /^\d+$/.test(mobile) && mobile.length === 10;
+            const mobileValid = /^\d+$/.test(mobile);
             const emailValid = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
             const messageValid = message.length >= 10;
 
