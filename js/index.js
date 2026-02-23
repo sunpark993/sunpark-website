@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
         strings: [
             "SUN PARK IMPEX",
             "Exporting Worldwide Since 1995",
-            "Fertilisers, Minerals, Building Materials",
-            "Spices, Fresh Fruits, Vegetables",
+            "General Minerals, Fertilisers, Building Materials",
+            "Spices, Fresh Fruits and Vegetables",
             "Dry Fruits and Nuts"
         ],
         typeSpeed: 50,
